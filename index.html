@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML und CSS Showcase</title>
+    <style>
+      /* CSS for the second section */
+      .styled-section {
+        background-color: #f0f8ff;
+        color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+
+      .styled-section h2 {
+        color: #007acc;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .styled-section p {
+        line-height: 1.8;
+        font-size: 1.1em;
+        text-align: justify;
+      }
+
+      .styled-section ul {
+        list-style-type: square;
+        padding-left: 20px;
+      }
+
+      .styled-section ul li {
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+
+      .styled-section img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        border: 2px solid #007acc;
+        border-radius: 5px;
+      }
+
+      .styled-section a {
+        color: #007acc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .styled-section a:hover {
+        text-decoration: underline;
+        color: #005f99;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML und CSS Showcase</h1>
+    </header>
+
+    <!-- Section 1: Only HTML -->
+    <section>
+      <h2>Nur HTML</h2>
+      <p>
+        Dies ist ein einfacher Abschnitt, der nur HTML verwendet. Es gibt keine
+        zusätzlichen Stile oder Formatierungen.
+      </p>
+      <ul>
+        <li>Ein einfacher Punkt</li>
+        <li>Noch ein Punkt</li>
+        <li>Und noch einer</li>
+      </ul>
+      <img src="./ressources/image.jpeg" alt="Image" />
+      <br />
+      <a href="https://www.example.com" target="_blank">Externer Link</a>
+    </section>
+
+    <!-- Section 2: HTML + CSS -->
+    <section class="styled-section">
+      <h2>HTML + CSS</h2>
+      <p>
+        Dieser Abschnitt zeigt, wie CSS verwendet werden kann, um das
+        Erscheinungsbild einer Webseite zu verbessern.
+      </p>
+      <ul>
+        <li>Ein stilisierter Punkt</li>
+        <li>Noch ein stilisierter Punkt</li>
+        <li>Und noch einer</li>
+      </ul>
+      <img src="./ressources/image.jpeg" alt="Image" />
+      <br />
+      <a href="https://www.example.com" target="_blank"
+        >Externer Link mit Stil</a
+      >
+    </section>
+
+    <!-- Section 3: HTML + CSS + JS -->
+    <section class="styled-section" id="colored">
+      <h2>HTML + CSS + JS</h2>
+      <p>
+        Dieser Abschnitt zeigt, wie JS verwendet werden kann, um der Webseite
+        mit dynamischen Funktionen zu erweitern.
+      </p>
+      <div class="counter">Zähler: <span id="counter">0</span></div>
+      <button id="incrementButton">Zähler erhöhen</button>
+      <br /><br />
+      <button id="special">???</button>
+      <br /><br />
+      <label for="colorPicker">Hintergrundfarbe auswählen:</label>
+      <input type="color" id="colorPicker" />
+    </section>
+
+    <script>
+      let counter = 0;
+
+      // Increment counter functionality
+      document
+        .getElementById("incrementButton")
+        .addEventListener("click", () => {
+          counter++;
+          document.getElementById("counter").textContent = counter;
+        });
+        document
+        .getElementById("special")
+        .addEventListener("click", () => {
+          window.alert('Hallo...')
+        });
+      // Change background color functionality
+      document
+        .getElementById("colorPicker")
+        .addEventListener("input", (event) => {
+          const section = document.querySelector("#colored");
+          section.style.backgroundColor = event.target.value;
+        });
+    </script>
+  </body>
+</html>
