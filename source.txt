@@ -61,7 +61,6 @@
   <body>
     <header>
       <h1>HTML und CSS Showcase</h1>
-      <a href="source.txt">Source Code</a>
     </header>
 
     <section>
@@ -122,9 +121,13 @@
           counter++;
           document.getElementById("counter").textContent = counter;
         });
-      document.getElementById("special").addEventListener("click", () => {
-        window.alert("Hallo...");
-      });
+
+      document
+        .getElementById("special")
+        .addEventListener("click", () => {
+          window.alert("Hallo...");
+        });
+
       document
         .getElementById("colorPicker")
         .addEventListener("input", (event) => {
