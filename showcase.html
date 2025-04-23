@@ -10,25 +10,70 @@
             font-family: sans-serif;
             margin: 2rem;
             line-height: 1.6;
+            background: #fafafa;
+            color: #2c3e50;
         }
 
         section {
             margin-bottom: 3rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #ccc;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
         }
 
         h2 {
             margin-top: 2rem;
-            color: #2c3e50;
+            color: #1e3799;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.5rem;
         }
 
         code {
             background-color: #f4f4f4;
             padding: 2px 6px;
             border-radius: 4px;
+            font-family: monospace;
         }
 
-        hr {
-            margin: 2rem 0;
+        pre {
+            background: #f4f4f4;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        img {
+            max-width: 200px;
+            margin-top: 1rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+        }
+
+        fieldset {
+            border: 1px solid #aaa;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        video, audio {
+            margin-top: 1rem;
+            display: block;
         }
     </style>
 </head>
@@ -38,114 +83,109 @@
 
     <section>
         <h2>Grundlegende Textstruktur</h2>
-        <h1>&lt;h1&gt;</h1>
-        <h2>&lt;h2&gt;</h2>
-        <h3>&lt;h3&gt;</h3>
-        <h4>&lt;h4&gt;</h4>
-        <h5>&lt;h5&gt;</h5>
-        <h6>&lt;h6&gt;</h6>
-        <p>&lt;p&gt; – Absatz</p>
-        <pre>&lt;pre&gt; – Vorformatierter Text
-  mit Zeilenumbrüchen und Abständen</pre>
-        <address>&lt;address&gt; – Kontaktinformationen</address>
-        <blockquote>&lt;blockquote&gt; – Zitat</blockquote>
+        <h1><code>&lt;h1&gt;</code></h1>
+        <h2><code>&lt;h2&gt;</code></h2>
+        <h3><code>&lt;h3&gt;</code></h3>
+        <h4><code>&lt;h4&gt;</code></h4>
+        <h5><code>&lt;h5&gt;</code></h5>
+        <h6><code>&lt;h6&gt;</code></h6>
+        <p><code>&lt;p&gt;</code> – Absatz</p>
+        <pre><code>&lt;pre&gt;</code> – Vorformatierter Text
+mit Zeilenumbrüchen und Abständen</pre>
+        <address><code>&lt;address&gt;</code> – Kontaktinformationen</address>
+        <blockquote><code>&lt;blockquote&gt;</code> – Zitat</blockquote>
     </section>
 
     <section>
         <h2>Listen & Definitionen</h2>
         <ol>
-            <li>&lt;ol&gt; – Nummerierte Liste</li>
-            <li>&lt;li&gt; – Listenelement</li>
+            <li><code>&lt;ol&gt;</code> – Nummerierte Liste</li>
+            <li><code>&lt;li&gt;</code> – Listenelement</li>
         </ol>
         <ul>
-            <li>&lt;ul&gt; – Unnummerierte Liste</li>
-            <li>&lt;li&gt; – Listenelement</li>
+            <li><code>&lt;ul&gt;</code> – Unnummerierte Liste</li>
+            <li><code>&lt;li&gt;</code> – Listenelement</li>
         </ul>
-        <menu>
-            <li>&lt;menu&gt; – Menüliste</li>
-        </menu>
-        <dir>
-            <li>&lt;dir&gt; – Verzeichnisliste</li>
-        </dir>
         <dl>
-            <dt>&lt;dt&gt; – Begriff</dt>
-            <dd>&lt;dd&gt; – Beschreibung</dd>
+            <dt><code>&lt;dt&gt;</code> – Begriff</dt>
+            <dd><code>&lt;dd&gt;</code> – Beschreibung</dd>
         </dl>
     </section>
 
     <section>
         <h2>Textformatierung & Inline-Elemente</h2>
-        <p><cite>&lt;cite&gt; – Buchtitel</cite></p>
-        <p><code>&lt;code&gt; – Codebeispiel</code></p>
-        <p><em>&lt;em&gt; – Betonung</em></p>
-        <p><kbd>&lt;kbd&gt; – Benutzereingabe</kbd></p>
-        <p><strong>&lt;strong&gt; – starke Betonung</strong></p>
-        <p><var>&lt;var&gt; – Variable</var></p>
-        <p><b>&lt;b&gt; – Fett</b></p>
-        <p><i>&lt;i&gt; – Kursiv</i></p>
-        <p><tt>&lt;tt&gt; – Monospace-Schrift</tt></p>
-        <p><u>&lt;u&gt; – Unterstrichen</u></p>
-        <p><strike>&lt;strike&gt; – Durchgestrichen</strike></p>
-        <p><big>&lt;big&gt; – Größerer Text</big></p>
-        <p><small>&lt;small&gt; – Kleinerer Text</small></p>
-        <p><sub>&lt;sub&gt; – Tiefgestellt</sub></p>
-        <p><sup>&lt;sup&gt; – Hochgestellt</sup></p>
-        <p><mark>&lt;mark&gt; – Markierter Text</mark></p>
-        <p><s>&lt;s&gt; – Nicht mehr relevanter Text</s></p>
+        <p><cite><code>&lt;cite&gt;</code> – Buchtitel</cite></p>
+        <p><code><code>&lt;code&gt;</code> – Codebeispiel</code></p>
+        <p><em><code>&lt;em&gt;</code> – Betonung</em></p>
+        <p><kbd><code>&lt;kbd&gt;</code> – Benutzereingabe</kbd></p>
+        <p><strong><code>&lt;strong&gt;</code> – starke Betonung</strong></p>
+        <p><var><code>&lt;var&gt;</code> – Variable</var></p>
+        <p><b><code>&lt;b&gt;</code> – Fett</b></p>
+        <p><i><code>&lt;i&gt;</code> – Kursiv</i></p>
+        <p><code>&lt;tt&gt;</code> – Monospace-Schrift (veraltet)</p>
+        <p><u><code>&lt;u&gt;</code> – Unterstrichen</u></p>
+        <p><s><code>&lt;s&gt;</code> – Nicht mehr relevanter Text</s></p>
+        <p><big><code>&lt;big&gt;</code> – Grösserer Text</big></p>
+        <p><small><code>&lt;small&gt;</code> – Kleinerer Text</small></p>
+        <p><sub><code>&lt;sub&gt;</code> – Tiefgestellt</sub></p>
+        <p><sup><code>&lt;sup&gt;</code> – Hochgestellt</sup></p>
+        <p><mark><code>&lt;mark&gt;</code> – Markierter Text</mark></p>
+        <p><strike><code>&lt;strike&gt;</code> – Durchgestrichen (veraltet)</strike></p>
     </section>
 
     <section>
         <h2>Links, Bilder & Trennung</h2>
-        <p><a href="#">&lt;a&gt; – Hyperlink</a></p>
+        <p><a href="#"><code>&lt;a&gt;</code> – Hyperlink</a></p>
         <br>
         <hr>
-        <img src="ressources/image.jpeg" alt="Beispielbild"> &lt;img&gt;
+        <img src="ressources/image.jpeg" alt="Beispielbild"> <code>&lt;img&gt;</code>
     </section>
 
     <section>
         <h2>Formulare</h2>
         <form>
             <fieldset>
-                <legend>&lt;legend&gt; – Formularbeschreibung</legend>
-                <label for="text">&lt;label&gt; – Textfeld:</label>
+                <legend><code>&lt;legend&gt;</code> – Formularbeschreibung</legend>
+                <label for="text"><code>&lt;label&gt;</code> – Textfeld:</label>
                 <input type="text" id="text">
-                <br>
+                <br><br>
                 <label>Dropdown:</label>
                 <select>
                     <optgroup label="Gruppe 1">
                         <option>Option 1</option>
                     </optgroup>
                 </select>
-                <br>
-                <textarea rows="2" cols="20">&lt;textarea&gt;</textarea>
-                <button>&lt;button&gt; – Button</button>
+                <br><br>
+                <textarea rows="2" cols="20"><code>&lt;textarea&gt;</code></textarea>
+                <br><br>
+                <button><code>&lt;button&gt;</code> – Button</button>
             </fieldset>
         </form>
-        <output>&lt;output&gt; – Ausgabefeld</output>
-        <datalist id="vorschlaege">
+        <p><output><code>&lt;output&gt;</code> – Ausgabefeld</output></p>
+        <p><datalist id="vorschlaege">
             <option value="HTML">
-        </datalist>
+        </datalist> <code>&lt;datalist&gt;</code></p>
     </section>
 
     <section>
         <h2>Tabellen</h2>
-        <table border="1">
+        <table>
             <colgroup>
                 <col style="background:#eee;">
             </colgroup>
             <thead>
                 <tr>
-                    <th>&lt;th&gt; Kopf</th>
+                    <th><code>&lt;th&gt;</code> Kopf</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>&lt;td&gt; Datenzelle</td>
+                    <td><code>&lt;td&gt;</code> Datenzelle</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td>&lt;tfoot&gt; Fußzeile</td>
+                    <td><code>&lt;tfoot&gt;</code> Fusszeile</td>
                 </tr>
             </tfoot>
         </table>
@@ -153,15 +193,15 @@
 
     <section>
         <h2>Layout & Semantik (HTML5)</h2>
-        <header>&lt;header&gt; – Kopfbereich</header>
-        <nav>&lt;nav&gt; – Navigation</nav>
-        <main>&lt;main&gt; – Hauptinhalt</main>
-        <article>&lt;article&gt; – Artikel</article>
-        <section>&lt;section&gt; – Sektion</section>
-        <aside>&lt;aside&gt; – Nebeninhalt</aside>
-        <footer>&lt;footer&gt; – Fußzeile</footer>
-        <div>&lt;div&gt; – Blockelement</div>
-        <span>&lt;span&gt; – Inline-Element</span>
+        <p><code>&lt;header&gt;</code> – Kopfbereich</p>
+        <p><code>&lt;nav&gt;</code> – Navigation</p>
+        <p><code>&lt;main&gt;</code> – Hauptinhalt</p>
+        <p><code>&lt;article&gt;</code> – Artikel</p>
+        <p><code>&lt;section&gt;</code> – Sektion</p>
+        <p><code>&lt;aside&gt;</code> – Nebeninhalt</p>
+        <p><code>&lt;footer&gt;</code> – Fusszeile</p>
+        <p><code>&lt;div&gt;</code> – Blockelement</p>
+        <p><code>&lt;span&gt;</code> – Inline-Element</p>
     </section>
 
     <section>
@@ -175,23 +215,22 @@
         <svg width="100" height="100">
             <circle cx="50" cy="50" r="40" fill="red" />
         </svg>
-        <object data="sample.pdf" type="application/pdf" width="100" height="100">&lt;object&gt;</object>
-        <iframe src="https://example.com" width="200" height="100">&lt;iframe&gt;</iframe>
-        <map name="image-map">&lt;map&gt;</map>
+        <object data="sample.pdf" type="application/pdf" width="100" height="100"></object>
+        <iframe src="https://example.com" width="200" height="100"></iframe>
+        <p><code>&lt;object&gt;</code>, <code>&lt;iframe&gt;</code>, <code>&lt;svg&gt;</code></p>
     </section>
 
     <section>
         <h2>HTML5 APIs & Spezialelemente</h2>
-        <progress value="70" max="100">&lt;progress&gt;</progress>
-        <meter value="0.6">&lt;meter&gt;</meter>
-        <time datetime="2025-04-23">23.04.2025</time>
-        <bdi> <bdi dir="rtl">wbr</bdi></bdi>
-        <wbr> – optionaler Zeilenumbruch
+        <p><progress value="70" max="100"><code>&lt;progress&gt;</code></progress></p>
+        <p><meter value="0.6"><code>&lt;meter&gt;</code></meter></p>
+        <p><time datetime="2025-04-23"><code>&lt;time&gt;</code> – 23.04.2025</time></p>
+        <p><code>&lt;wbr&gt;</code> – optionaler Zeilenumbruch<wbr></p>
         <details>
-            <summary>&lt;summary&gt; – Zusammenfassung</summary>
-            <p>&lt;details&gt; – Weitere Infos</p>
+            <summary><code>&lt;summary&gt;</code> – Zusammenfassung</summary>
+            <p><code>&lt;details&gt;</code> – Weitere Infos</p>
         </details>
-        <dialog open>&lt;dialog&gt; – Dialogbox</dialog>
+        <dialog open><code>&lt;dialog&gt;</code> – Dialogbox</dialog>
     </section>
 </body>
 
